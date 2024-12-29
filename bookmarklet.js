@@ -6,8 +6,8 @@
 
     var elem = stats.domElement;
     elem.style.position = 'fixed';
-    elem.style.right    = '0px';
-    elem.style.bottom   = '0px';
+    elem.style.right    = '200px';
+    elem.style.bottom   = '1000px';
     elem.style.zIndex   = 100000;
 
     document.body.appendChild( stats.domElement );
@@ -18,6 +18,6 @@
     });
   };
   
-  script.src = "https://rawgit.com/paulirish/memory-stats.js/master/memory-stats.js";
+  script.src = "https://raw.githack.com/Crackenide/memory-stats.js/refs/heads/master/memory-stats.js";
   document.head.appendChild(script);
 })();
