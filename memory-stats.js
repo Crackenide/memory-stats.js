@@ -7,12 +7,12 @@ var MemoryStats = function (){
 
 	var msMin	= 100;
 	var msMax	= 0;
-	var GRAPH_HEIGHT = 30;
+	var GRAPH_HEIGHT = 60;
 	var redrawMBThreshold = GRAPH_HEIGHT;
 
 	var container	= document.createElement( 'div' );
 	container.id	= 'stats';
-	container.style.cssText = 'width:80px;height:48px;opacity:0.9;cursor:pointer;overflow:hidden;z-index:10000;will-change:transform;';
+	container.style.cssText = 'width:160px;height:96px;opacity:0.9;cursor:pointer;overflow:hidden;z-index:10000;will-change:transform;';
 
 	var msDiv	= document.createElement( 'div' );
 	msDiv.id	= 'ms';
@@ -21,16 +21,16 @@ var MemoryStats = function (){
 
 	var msText	= document.createElement( 'div' );
 	msText.id	= 'msText';
-	msText.style.cssText = 'color:#0f0;font-family:Helvetica,Arial,sans-serif;font-size:9px;font-weight:bold;line-height:15px';
+	msText.style.cssText = 'color:#0f0;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:bold;line-height:15px';
 	msText.innerHTML= 'Memory';
 	msDiv.appendChild( msText );
 
 	var msGraph	= document.createElement( 'div' );
 	msGraph.id	= 'msGraph';
-	msGraph.style.cssText = 'position:relative;width:74px;height:' + GRAPH_HEIGHT + 'px;background-color:#0f0';
+	msGraph.style.cssText = 'position:relative;width:148px;height:' + GRAPH_HEIGHT + 'px;background-color:#0f0';
 	msDiv.appendChild( msGraph );
 
-	while ( msGraph.children.length < 74 ) {
+	while ( msGraph.children.length < 148 ) {
 
 		var bar = document.createElement( 'span' );
 		bar.style.cssText = 'width:1px;height:' + GRAPH_HEIGHT + 'px;float:left;background-color:#131';
