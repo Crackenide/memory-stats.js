@@ -21,7 +21,7 @@ var MemoryStats = function (){
 
 	var msText	= document.createElement( 'div' );
 	msText.id	= 'msText';
-	msText.style.cssText = 'color:#0f0;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:bold;line-height:15px';
+	msText.style.cssText = 'color:#0f0;font-family:Helvetica,Arial,sans-serif;font-size:10px;font-weight:bold;line-height:15px';
 	msText.innerHTML= 'Memory';
 	msDiv.appendChild( msText );
 
