@@ -6,7 +6,7 @@
 
     var elem = stats.domElement;
     elem.style.position = 'fixed';
-    elem.style.right    = '200px';
+    elem.style.right    = '60px';
     elem.style.bottom   = '1700px';
     elem.style.zIndex   = 100000;
 
