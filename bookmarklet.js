@@ -7,7 +7,7 @@
     var elem = stats.domElement;
     elem.style.position = 'fixed';
     elem.style.right    = '60px';
-    elem.style.bottom   = '1700px';
+    elem.style.bottom   = '1600px';
     elem.style.zIndex   = 100000;
 
     document.body.appendChild( stats.domElement );
